@@ -1,0 +1,34 @@
+package basics;
+
+
+
+public class javapractice {
+	int a, b;
+	 
+	public static void methodB(int a,int b) {
+		if( a!=1) {
+			
+			if(b==1) {
+				methodB(a,256);
+				a=a-1;
+				
+			}
+			else {
+				for (int i = 1; i<=b;i++)
+				System.out.println("@");
+				methodB(a,b/2);
+			}
+		}
+		 
+	 }
+	public static void main(String[] args) {
+		 
+		methodB(128, 256);
+		
+		   
+	}
+
+
+	
+
+}
